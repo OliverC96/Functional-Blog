@@ -17,6 +17,7 @@ from flask_gravatar import Gravatar
 from dotenv import load_dotenv
 import os
 import smtplib
+import gunicorn
 
 # Retrieving environment variables for easy access
 load_dotenv()
