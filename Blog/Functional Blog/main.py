@@ -110,6 +110,8 @@ class Comment(db.Model):
     text = db.Column(db.Text, nullable=False)
     date_stamp = db.Column(db.Text, nullable=False)
 
+db.create_all()
+
 
 # Defining a user loader method to implement the Flask-Login module
 @login_manager.user_loader
