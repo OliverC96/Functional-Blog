@@ -1,3 +1,4 @@
+# Importing relevant modules/libraries
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, URL
@@ -13,25 +14,26 @@ from datetime import datetime as dt
 from twilio.rest import Client
 from functools import wraps
 from flask_gravatar import Gravatar
+from dotenv import load_dotenv
+import os
 import smtplib
 
+load_dotenv()
 
 # Declaring constants (API endpoints, authorization tokens, etc.)
-DATA_ENDPOINT = "https://api.npoint.io/718381b611359a39567f"
-
-MY_EMAIL = "oliverclennan@gmail.com"
-EMAIL_PASS = "ndtpwgspkmirhpfb"
+MY_EMAIL = os.getenv("MY_EMAIL")
+EMAIL_PASS = os.getenv("EMAIL_PASS")
 SERVER_DOMAIN = "smtp.gmail.com"
 SERVER_PORT = 587
 
-TWILIO_SID = "AC9487b451231902436ab29a8483fbbd85"
-TWILIO_AUTH = "9dffe867f3141365e4351730d24b0497"
-TWILIO_NUMBER = "+19035516263"
-MY_NUMBER = "+15875775433"
+TWILIO_SID = os.getenv("TWILIO_SID")
+TWILIO_AUTH = os.getenv("TWILIO_AUTH")
+TWILIO_NUMBER = os.getenv("TWILIO_NUMBER")
+MY_NUMBER = os.getenv("MY_NUMBER")
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
 login_manager = LoginManager()
 login_manager.init_app(app)
 ckeditor = CKEditor(app)
