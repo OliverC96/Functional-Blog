@@ -49,7 +49,6 @@ curr_date = dt.now().strftime('%B %-d, %Y')
 curr_year = dt.now().year
 comment_date = dt.now().strftime('%Y-%m-%d')
 
-# Configuring commenter profile pictures
 gravatar = Gravatar(
     app=app,
     size=50,
