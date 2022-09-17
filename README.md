@@ -1,7 +1,7 @@
 <h3> Project Credits </h3>
 <ul>
   <li> Basic blog template - <a href="https://startbootstrap.com/theme/clean-blog"> startbootstrap.com </a> </li>
-  <li> Project idea and reference - <a href="https://bit.ly/3S3ihuC"> Dr. Angela Yu from [100 Days of Code: The Complete Python Pro Bootcamp for 2022] </a> </li>
+  <li> Project idea and reference - Dr. Angela Yu from <a href="https://bit.ly/3S3ihuC"> 100 Days of Code: The Complete Python Pro Bootcamp for 2022 </a> </li>
 </ul>
 
 <h3> Site Functionality </h3>
