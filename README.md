@@ -16,5 +16,5 @@
 <h3> Additional Info </h3>
 <ul>
   <li> This application utilizes Flask, Flask-Login, Flask-WTF, Flask-Bootstrap, Flask-SQLAlchemy, Flask-CKeditor, Flask-Gravatar, Werkzeug, Twilio API and smtplib </li>
-  <li> Check out the live version of my sample blog site, hosted by Heroku and served by gunicorn - https://olivers-blog.herokuapp.com </li>
+  <li> Check out the live version of my sample blog site, hosted by Heroku and served by gunicorn - <br>https://olivers-blog.herokuapp.com </li>
 </ul>
