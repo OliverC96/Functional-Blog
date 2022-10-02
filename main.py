@@ -41,7 +41,7 @@ ckeditor = CKEditor(app)
 Bootstrap(app)
 
 # Creating and configuring the associated database
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL", "sqlite:///blog.db")
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL2", "sqlite:///blog.db")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -109,6 +109,8 @@ class Comment(db.Model):
     comment_author = relationship("BlogUser", back_populates="comments")
     text = db.Column(db.Text, nullable=False)
     date_stamp = db.Column(db.Text, nullable=False)
+    
+db.create_all()
 
 
 # Defining a user loader method to implement the Flask-Login module
